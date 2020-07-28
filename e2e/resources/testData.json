@@ -1,0 +1,53 @@
+{
+    "Search_URLs" : {
+
+          "baseUrl" : "https://ubicquiaappqa.knowarth.com/#/pages/admin",
+          "devURL":"https://dev5.ubicquia.com/#/login",
+          "qaURL":"https://qa.ubicquia.com/#/login"
+
+    },
+
+    "LoginCredentials" : {
+            "Useranme" : "neeraj.agrawal@knowarth.com",
+            "Password" : "Password1!",
+            "Useranme2" : "admin@knowarth.com",
+            "Password2" : "Password1!",
+            "AdminUsernName":"admin@ubicquia.com",
+            "AdminPassword":"Password1!",
+
+            "Wrong_UserName" : "satyapriya.mohaty@knowarth.com",
+            "Wrong_Password" : "1212121"
+
+        },
+    "HomePage_Datas" : 
+    {
+          "Zone_name":"1-Zone-1",
+          "Node_name":"1-Node-1",
+          "NewZoneName" : "1-Zone-3",
+          "AlertType" : "Pole Voltage",
+          "GroupName" : "1-Group-1",
+          "Zone_GroupName" : "1-Group-1"
+    },
+
+    "Start_position" : {
+          "first_TestCase" : "First",
+          "nextAll_TestCase" : "next"
+    },
+
+    "Menu_Group" : {
+          "Condition_On" : "mat-slide-toggle mat-primary mat-checked",
+          "Condition_Off" : "mat-slide-toggle mat-primary",
+          
+          "Switch_Off" : "mat-slide-toggle mat-primary cdk-focused cdk-mouse-focused",
+          "Switch_On" : "mat-slide-toggle mat-primary cdk-focused cdk-mouse-focused mat-checked",
+          "Group_PopUp_Settings" : "Settings",
+          "Frequency_Min" : "100",
+          "Frequency_Max" : "400"
+    },
+
+    "Admin_Group" :
+    {
+          "Group_Name" : "ZZZZ"
+    }
+    
+}

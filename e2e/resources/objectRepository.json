@@ -1,0 +1,417 @@
+{
+   "LoginPage" : 
+   {
+       "Ubicquia_Logo" : [ "xpath" , "(//*[@alt='ubi-logo'])[1]"],
+       "username" : [ "xpath" , "//*[@class='form-block']//*[@id='inputEmail3']"],
+       "UserName_Label" : [ "xpath" , "//*[@class='form-block']/descendant::label[1]"], 
+       "password" : [ "xpath" , "//*[@class='form-block']//*[@id='inputPassword3']"],
+       "Password_Label" : ["xpath" , "//*[@class='form-block']/descendant::label[2]"],
+       "login_btn" : [ "xpath" , "(//*[text()='LOGIN'])[2]"],
+       "Ubicquia_NetworkName" : [ "xpath" , "//span[contains(text(),'Acme Corporation Customer 1 (1100)')]"],
+       "Ubicquia_NetworkName1" : [ "linkText" , "Admin Customer 100 (100)"],
+       "All_CompanyNames" : [ "class" , "element-row mat-row ng-star-inserted"],
+       
+        "Wrong_Data_PopUp" : [ "xpath" , "//span[contains(text(),'Wrong email or password.')]"]
+   },
+   "Menu" : 
+   {
+       "HomePage_Header" : [ "xpath" , "//h1[contains(text(),'Home')]"],
+       "Admin" : ["xpath","//span[contains(text(),'Admin')]"],
+       "Group_subTab" : ["xpath" , "/html[1]/body[1]/app[1]/main[1]/pages[1]/div[1]/div[1]/admin[1]/div[1]/mat-tab-group[1]/mat-tab-header[1]/div[2]/div[1]/div[1]/div[3]"],
+       "Group_Node_Btn" : [ "xpath" , "/html[1]/body[1]/app[1]/main[1]/pages[1]/div[1]/div[1]/admin[1]/div[1]/mat-tab-group[1]/div[1]/mat-tab-body[3]/div[1]/app-admin-groups[1]/app-table[1]/div[1]/mat-table[1]/mat-row[1]/mat-cell[3]/button[1]/span[1]"],
+
+       "Home_Logo" : ["xpath" , "//div[@class='header-logo text-center']//img[@class='logo-img']"],
+       "HomePage_MyAccount" : [ "xpath","//*[text()='Satyapriya']"],
+       "Admin2" : ["xpath","/html[1]/body[1]/app[1]/main[1]/pages[1]/ba-sidebar[1]/aside[1]/ba-menu[1]/div[2]/ul[1]/ba-menu-item[6]/li[1]/a[1]"],
+       
+       "Nodes_OffLine_Block" : [ "linkText" , " Nodes Offline "],
+       "HomePage_OffLine_Block" : [ "xpath" , "//span[contains(text(),'Nodes Offline')]"], 
+
+       "Nodes_On_Block" : [ "linkText" , " Nodes On "],
+       "HomePage_OnNode_Block" : [ "xpath","//span[contains(text(),'Nodes On')]"],
+
+       "Nodes_Off_Block" : [ "linkText" , " Nodes Off "],
+       "HomePage_OffNode_Block" : [ "xpath" , "//span[text()=' Nodes Off ']"],
+       
+       "Nodes_Energy_Consumption" : [ "xpath" , "//span[contains(text(),'Energy Consumption')]"], 
+       "HomePage_EnergyConsumption_Block" : [ "xpath" , "//span[contains(text(),'Energy Consumption')]"], 
+
+       "Nodes_PowerConsumption_Block" : [ "xpath" , "//span[contains(text(),'Power Consumption')]"],
+       "Nodes_PowerConsumption_BarChart" : [ "class" , "chartist stacked-bar ng-star-inserted"],
+
+       "Nodes_Alerts_Block" : [ "" , ""],
+       "Notification_Alert" : [ "class","alerts ng-star-inserted"],
+
+       "Menu_Nodes" : [ "xpath" , "(//*[text()='Nodes']|//*[@class='menuicon ng-star-inserted'])[4]"],
+       
+        
+       "Zones_subtab": ["xpath" , "(//*[@class='mat-tab-label-content'])[4]"],
+       "Zone_name" : ["xpath","//mat-cell[contains(text(),'1-Zone-1')]"],
+       "ZoneSubtab_AddBTN":["xpath","//div[@class='table-action']//button[@class='mat-button']"],
+       "AddZone_Name" : [ "xpath" , "//input[@id='mat-input-7']"],
+       "AddNewZone_Dropdown" : ["xpath" , "//h2[@id='mat-dialog-title-2']"],
+       "Zone_GroupName_Attached" : [ "xpath" , "//span[@class='col-3 items ng-star-inserted']"],
+       "Zone_Group_Btn" : [ "xpath" , "//mat-row[1]//mat-cell[2]//button[1]//span[1]"],
+
+       "Menu_Zones" : [ "xpath" , "//span[contains(text(),'Zones')]"],
+
+       "Menu_Groups" : [ "xpath" , "//span[contains(text(),'Groups')]"],
+       "Groups_Header" : [ "xpath" , "//h1[contains(text(),'Groups')]"],
+       "Manu_Groups_names" : [ "class" , "element-row mat-row ng-star-inserted"],
+       "Group_subTab_1" : ["xpath" , "/html[1]/body[1]/app[1]/main[1]/pages[1]/div[1]/div[1]/admin[1]/div[1]/mat-tab-group[1]/mat-tab-header[1]/div[2]/div[1]/div[1]/div[3]"],
+
+       "Admin_Group" : [ "xpath" , "(//*[@class='mat-tab-label-content'])[3]"],
+       "Admin_Columns" : [ "class" , "mat-tab-label mat-ripple ng-star-inserted"],
+       "Admin_Group_GroupName" : [ "xpath" , "//mat-cell[@class='mat-cell cdk-column-node mat-column-node ng-star-inserted'][contains(text(),'1-Group-1')]"],
+   
+       "Schedule_Column" : [ "xpath" , "//div[contains(text(),'Schedules')]"],
+       "create_Schedule" : [ "xpath" , "//mat-icon[@class='mat-icon material-icons mat-icon-no-color']"],
+       "Enter_Name" : [ "xpath" , "//input[@id='mat-input-1']"],
+       "Select_Node_Popup" : [ "xpath" , "/html[1]/body[1]/div[3]/div[2]/div[1]/mat-dialog-container[1]/app-edit-schedule-dialog[1]/form[1]/mat-dialog-content[1]/div[2]/div[1]/div[1]/mat-form-field[1]/div[1]/div[1]/div[1]/mat-select[1]/div[1]/div[1]/span[1]"],
+       "Select_Node" : [ "xpath" , "//span[contains(text(),'Node 2')]"],
+       "Schedule_Action_DropDown" : ["xpath" , "//mat-select[@ng-reflect-placeholder='Set Schedule Action']"],
+       "Select_Action_Name" : [ "xpath" , "//span[@class='mat-option-text'][contains(text(),'DIM')]"],
+       "Schedule_Slider" : [ "xpath" , "//*[@class='mat-slider-wrapper']"],
+
+       "Threshold_Column" : [ "xpath" , "//div[contains(text(),'Thresholds')]"],
+       "Threshold":["xpath","(//*[@class='mat-tab-label-content'])[6]"],
+
+       "Threshold_Name" : [ "xpath" , "//button[contains(text(),'NAME')]"],
+       "Admin_Threshold_NameColumn" : [ "xpath" , "(//*[@class='mat-header-row ng-star-inserted']/mat-header-cell/div)[1]/button"], 
+       "Threshold_NameList" : [ "class" , "mat-cell cdk-column-node mat-column-node ng-star-inserted"],
+
+       "Threshold_AlertType" : [ "xpath" , "(//*[@class='mat-header-row ng-star-inserted']/mat-header-cell/div)[2]/button"],
+       "Threshold_AlertType_List" : [ "class" , "mat-cell cdk-column-thresholdTypeName mat-column-thresholdTypeName ng-star-inserted"],
+       
+       "Threshold_Active" : [ "xpath" , "(//*[@class='mat-header-row ng-star-inserted']/mat-header-cell/div)[4]/button"],
+       "Threshold_Active_CheckBox" : [ "class" , "mat-cell cdk-column-active mat-column-active ng-star-inserted"],
+
+       "User_Column" : [ "xpath" , "//div[contains(text(),'Users')]"],
+       "User_FirstName" : [ "xpath" , "//button[contains(text(),'FIRST NAME')]"],
+       "User_FirstName_List" : [ "class" , "mat-cell cdk-column-firstname mat-column-firstname ng-star-inserted"],
+       "User_LastName" : [ "xpath" , "//button[contains(text(),'LAST NAME')]"],
+       "User_LastName_List" : [ "class" , "mat-cell cdk-column-lastname mat-column-lastname ng-star-inserted"],
+       "User_Type" : [ "xpath" , "//button[contains(text(),'TYPE')]"],
+       "User_Type_List" : [ "class" , "mat-cell cdk-column-roleId mat-column-roleId ng-star-inserted"],
+       "User_Email" : [ "xpath" , "//button[contains(text(),'EMAIL')]"],
+       "User_Email_List" : [ "class" , "mat-cell cdk-column-email mat-column-email ng-star-inserted"]
+    },
+
+    "Menu_Node" : 
+    {
+        "Nodes_Header" : [ "xpath" , "//h1[contains(text(),'Nodes')]"],
+        "Node_List" : [ "class" , "element-row mat-row ng-star-inserted"],
+
+        "Node_Name_Column" : [ "xpath" , "//button[contains(text(),'NAME')]"],
+        "Node_NameList" : [ "class" , "mat-cell cdk-column-node mat-column-node ng-star-inserted"],
+        "Node_name" :["xpath","//mat-row[1]//mat-cell[1]"],
+
+        "Node_Fixture_Current_Column" : [ "xpath" , "//button[contains(text(),'FIXTURE CURRENT')]"],
+        "Node_FixtureCurrent_List" : [ "class" , "mat-cell cdk-column-C1State mat-column-C1State ng-star-inserted"],
+
+        "Node_Pole_Current_Column" : [ "xpath" , "//button[contains(text(),'POLE CURRENT')]"], 
+        "Node_PoleCurrent_List" : [ "class" , "mat-cell cdk-column-CState mat-column-CState ng-star-inserted"], 
+
+        "Node_Fixture_Voltage_Column" : [ "xpath" , "//button[contains(text(),'FIXTURE VOLTAGE')]"], 
+        "Node_FixtureVoltage_List" : [ "class" , "mat-cell cdk-column-V1State mat-column-V1State ng-star-inserted"],
+
+        "Node_Pole_Voltage_Column" : [ "xpath" , "//button[contains(text(),'POLE VOLTAGE')]"], 
+        "Node_PoleVoltage_List" : [ "class" , "mat-cell cdk-column-VState mat-column-VState ng-star-inserted"],
+
+        "Node_Status_Column" : [ "xpath" , "//button[contains(text(),'STATUS')]"], 
+        "Node_Status_List" : [ "class" , "mat-cell cdk-column-LPStateView mat-column-LPStateView ng-star-inserted"],
+
+        "Node_Light_Switch_Column" : [ "xpath" , "//*[contains(text(),'LIGHT SWITCH')]"], 
+        "Node_LightSwitch_OptionList" : [ "class" , "mat-cell cdk-column-LightState mat-column-LightState ng-star-inserted"],
+        "Node_LightSwitch_Btn" : [ "class" , "mat-slide-toggle mat-primary"],
+        "LightSwitch_BtnList" : [ "class" , "mat-slide-toggle mat-primary"],
+        "LightSwitch_List_Params1" : [ "xpath" , "//*[@class='mat-tab-body-content ng-trigger ng-trigger-translateTab']/app-status/app-table/div/mat-table/mat-row/mat-cell/span/mat-slide-toggle"],
+        "LightSwitch_List_Params" : ["class","mat-slide-toggle-bar mat-slide-toggle-bar-no-side-margin"],
+        "Node_LightSwitch_enabled" : [ "class" , "mat-slide-toggle mat-primary mat-checked"],
+        "Node_SwitchedOff_Light" : [ "xpath" , "//*[@class='mat-slide-toggle mat-primary']"], 
+        "Node_LightSwitch_Off_Disabled" : [ "xpath" , "//*[@ng-reflect-checked='false']|//*[@class='mat-slide-toggle mat-primary']"], 
+        "LightSwitch_Status" : [ "xpath" , "//*[@class='example-container']/mat-table/mat-row[1]/mat-cell[9]"],
+
+        "Node_SearchBox" : [ "xpath" , "//*[@ng-reflect-placeholder='Search']"],
+        "Node_SearchBox_text" : [ "class" , "mat-form-field-label ng-tns-c15-37 mat-empty mat-form-field-empty ng-star-inserted"],
+        "Node_SearchBox_Element" : [ "xpath" , "//*[text()='Search']"],        
+
+        "Node_summary" : [ "xpath" , "//div[contains(text(),'Summary')]"],
+        "Summary_Item" : [ "xpath" , "//strong[contains(text(),'ITEM')]"],
+        "Summary_Item_List" : [ "class" , "mat-cell cdk-column-metric mat-column-metric ng-star-inserted"],
+
+        "LightSwitch_StatusList" : [ "xpath" , "//*[@class='example-container']/descendant::mat-slide-toggle/following::div[1]"],
+        "Menu_Nodes" : [ "xpath" , "//span[contains(text(),'Nodes')]/parent::a"],
+        "Node_Summary_Group_Link" : [ "xpath" , "//*[@class='mat-table']/descendant::a[1]"], 
+        "Node_Summary_Zone_Link" : [ "xpath" , "//*[@class='mat-table']/descendant::a[2]"]
+    },
+
+    "Menu_Zone" : 
+    {
+        "Zones_Header" : [ "xpath" , "//h1[contains(text(),'Zones')]"],
+        "Menu_Zones_names" : [ "class" , "element-row mat-row ng-star-inserted"],
+        "Menu_Zone_Column" : [ "xpath" , "//button[contains(text(),'NAME')]"],
+        "Menu_Zone_NameRows" : [ "class" , "mat-cell cdk-column-node mat-column-node ng-star-inserted"],
+        "Menu_Zone_LightSwitch_Column" : [ "xpath" , "//*[contains(text(),'LIGHT SWITCH')]"],
+        "LightSwitch_ToggleBtn" : [ "class" , "mat-slide-toggle-bar mat-slide-toggle-bar-no-side-margin"],
+        
+        "Menu_Zone_Setting" : [ "xpath" , "//div[contains(text(),'Settings')]"],
+        "Menu_ZonePopup_Zone_Name" : [ "xpath" , "//*[@class='cdk-overlay-pane status-dialog']/descendant::span[3]"], 
+        "ZonePopup_DimValue" : [ "xpath" , "(//*[@class='mat-tab-group mat-primary mat-tab-group-dynamic-height']/div/mat-tab-body/div/app-node-thresholds/div/form/div/label)[1]"], 
+        "ZonePopup_DimValue_Slider" : [ "xpath" , "(//*[@class='ng5-slider-span ng5-slider-bar-wrapper ng5-slider-left-out-selection'])[1]"],
+        "ZonePopup_LightSensitivity" : [ "xpath" , "(//*[@class='mat-tab-group mat-primary mat-tab-group-dynamic-height']/div/mat-tab-body/div/app-node-thresholds/div/form/div/label)[2]"],
+        "ZonePopup_LightSensitivity_Slider" : [ "" , "(//*[@class='ng5-slider-span ng5-slider-bar-wrapper ng5-slider-left-out-selection'])[2]"],
+        
+        
+        "ZonePopup_UpdateFrequency" : [ "xpath" , "//*[@class='mat-tab-group mat-primary mat-tab-group-dynamic-height']/div/mat-tab-body/div/app-node-thresholds/div/div/label"], 
+        
+	    "Setting_DIM_FullSlider" : [ "xpath" , "(//span[@class='ng5-slider-span ng5-slider-bar-wrapper'])[1]/span"], 
+        "DIM_Slider_Btn" : [ "xpath" , "(//span[@class='ng5-slider-span ng5-slider-bar-wrapper'])[1]/following::span[3]"], 
+        "Setting_DIM_Slider" : [ "xpath" , "//div[@class='field-value slider']//span[4]/following::span[1]"], 
+        "Setting_DIM_Percentage" : [ "xpath" , "(//*[@class='ng5-slider-span ng5-slider-bubble ng5-slider-model-value'])[1]"], 
+        "Setting_LightSense_FullSlider" : [ "xpath" , "(//*[@class='ng5-slider-span ng5-slider-bar-wrapper'])[3]"],
+        "Setting_Light_Sensitivity_Min" : [ "xpath" , "//div[@class='field-value slider']//span[4]/following::span[19]"],
+        "Setting_Light_Sensitivity_Min_Value" : [ "xpath" , "(//*[@class='ng5-slider-span ng5-slider-bubble ng5-slider-model-value'])[2]"], 
+        "Setting_Light_Sensitivity_Max" : [ "xpath" , "//div[@class='field-value slider']//span[4]/following::span[20]"], 
+        "Setting_Light_Sensitivity_Max_Value" : [ "xpath" , "(//*[@class='ng5-slider-span ng5-slider-bubble ng5-slider-model-high'])[2]"], 
+	    "LightSwitch_ColumnBtn" : [ "css" , "div[class=mat-paginator-page-size-label]"], 
+	    "Menu_Zones" : [ "xpath" , "//span[contains(text(),'Zones')]"],
+        "Menu_ZoneRow_Btn" : [ "xpath" , "//mat-cell[contains(text(),'')]/parent::mat-row/mat-cell[2]"],
+        "Setting_PopUp_Frequency_Min" : [ "xpath" , "//*[@ng-reflect-placeholder='admin.threshold.hours']"], 
+        "Setting_PopUp_Frequency_Max" : [ "xpath" , "//*[@ng-reflect-placeholder='admin.threshold.minutes']"], 
+        "AdminThreshold_Hour" : [ "xpath" , "//*[text()='admin.threshold.hours']"],
+        "AdminThreshold_Minute" : [ "xpath" , "//*[text()='admin.threshold.minutes']"],
+        "LightSwitch_Btn" : [ "xpath" , "//*[@class='element-row mat-row ng-star-inserted']/mat-cell/span[2]/mat-slide-toggle"], 
+        "Setting_PopUp_Update_Btn" : [ "xpath" , "//span[contains(text(),'Update')]"], 
+        "PopUp_Yes_Btn" : [ "xpath" , "//span[contains(text(),'Yes')]"],
+        "Close_PopUp_Btn" : [ "xpath" , "//span[contains(text(),'Close')]"],
+        "Pagination_DropDown" : [ "css" , "div[class='mat-select-trigger']"],
+        "Pagination_PagesRange" : [ "xpath" , "//*[@class='mat-option ng-star-inserted']"],
+        "Pagination_Five_Range" : [ "xpath" , "//*[@class='cdk-overlay-pane']//*[@class='mat-option-text'][text()='5']"],
+        "Pagination_Previous_Btn" : [ "css" , "button[class='mat-paginator-navigation-previous mat-icon-button']"], 
+        "Pagination_Next_Btn" : [ "css" , "button[class='mat-paginator-navigation-next mat-icon-button']"]
+    },
+
+    
+"Menu_Group" : {
+        
+        "LightSwitch_Btn" : [ "xpath" , "//*[@class='element-row mat-row ng-star-inserted']/mat-cell/span[2]/mat-slide-toggle"],
+        "Group_PopUp_GroupName" : [ "xpath" , "//*[@class='cdk-overlay-pane status-dialog']/descendant::span[3]"], 
+        "Group_PopUp_Setting" : [ "xpath" , "(//*[@class='mat-tab-label mat-ripple mat-tab-label-active ng-star-inserted'])[2]/div"],
+
+        "Menu_Groups" : [ "xpath" , "//span[contains(text(),'Groups')]"],
+        "Groups_Header" : [ "xpath" , "//h1[contains(text(),'Groups')]"],
+        "Manu_Groups_names" : [ "class" , "element-row mat-row ng-star-inserted"],
+
+        "Menu_Group_NameRows" : [ "xpath" , "//*[@class='mat-cell cdk-column-node mat-column-node ng-star-inserted']"],
+        "Menu_GroupRow_Btn" : [ "xpath" , "//mat-cell[contains(text(),'')]/parent::mat-row/mat-cell[1]"],
+        "Setting_DIM_Slider" : [ "xpath" , "//div[@class='field-value slider']//span[4]/following::span[1]"], 
+        "Setting_DIM_Percentage" : [ "xpath" , "(//*[@class='ng5-slider-span ng5-slider-bubble ng5-slider-model-value'])[1]"], 
+
+        "Setting_PopUp_Update_Btn" : [ "xpath" , "//span[contains(text(),'Update')]"], 
+        "PopUp_Yes_Btn" : [ "xpath" , "//span[contains(text(),'Yes')]"],
+        "Close_PopUp_Btn" : [ "xpath" , "//span[contains(text(),'Close')]"],
+
+        "Setting_Light_Sensitivity_Min" : [ "xpath" , "//div[@class='field-value slider']//span[4]/following::span[19]"],
+        "Setting_Light_Sensitivity_Min_Value" : [ "xpath" , "(//*[@class='ng5-slider-span ng5-slider-bubble ng5-slider-model-value'])[2]"], 
+        "Setting_Light_Sensitivity_Max" : [ "xpath" , "//div[@class='field-value slider']//span[4]/following::span[20]"], 
+        "Setting_Light_Sensitivity_Max_Value" : [ "xpath" , "(//*[@class='ng5-slider-span ng5-slider-bubble ng5-slider-model-high'])[2]"], 
+
+        "Setting_PopUp_Frequency_Min" : [ "xpath" , "//*[@ng-reflect-placeholder='admin.threshold.hours']"], 
+        "Setting_PopUp_Frequency_Max" : [ "xpath" , "//*[@ng-reflect-placeholder='admin.threshold.minutes']"], 
+
+        "Pagination_DropDown" : [ "css" , "div[class='mat-select-trigger']"],
+        "Pagination_PagesRange" : [ "xpath" , "//*[@class='mat-option ng-star-inserted']"],
+        "Pagination_Five_Range" : [ "xpath" , "//*[@class='cdk-overlay-pane']//*[@class='mat-option-text'][text()='5']"],
+        "Pagination_Previous_Btn" : [ "css" , "button[class='mat-paginator-navigation-previous mat-icon-button']"], 
+        "Pagination_Next_Btn" : [ "css" , "button[class='mat-paginator-navigation-next mat-icon-button']"]
+    
+    },
+    
+    "HomePage" :
+   {
+        "HomePage_Header" : [ "xpath" , "//h1[contains(text(),'Home')]"],
+        "Home_Logo" : ["xpath" , "//div[@class='header-logo text-center']//img[@class='logo-img']"],
+       
+    
+        "Nodes_OffLine_Block" : [ "linkText" , " Nodes Offline "],
+        "HomePage_OffLine_Block" : [ "xpath" , "//span[contains(text(),'Nodes Offline')]"], 
+
+        "Nodes_On_Block" : [ "linkText" , " Nodes On "],
+        "HomePage_OnNode_Block" : [ "xpath","//span[contains(text(),'Nodes On')]"],
+
+        "Nodes_Off_Block" : [ "linkText" , " Nodes Off "],
+        "HomePage_OffNode_Block" : [ "xpath" , "//span[text()=' Nodes Off ']"],
+       
+        "Nodes_Energy_Consumption" : [ "xpath" , "//span[contains(text(),'Energy Consumption')]"], 
+        "HomePage_EnergyConsumption_Block" : [ "xpath" , "//span[contains(text(),'Energy Consumption')]"], 
+
+        "Nodes_PowerConsumption_Block" : [ "xpath" , "//span[contains(text(),'Power Consumption')]"],
+        "Nodes_PowerConsumption_BarChart" : [ "class" , "chartist stacked-bar ng-star-inserted"],
+
+        "Notification_Alert" : [ "class","alerts ng-star-inserted"],
+
+        "Menu_Nodes" : [ "xpath" , "//span[contains(text(),'Nodes')]/parent::a"],
+        "Menu_Groups" : [ "xpath" , "//span[contains(text(),'Groups')]"],
+        "Menu_Zones" : [ "xpath" , "//span[contains(text(),'Zones')]"],
+        "Menu_Admins" : [ "xpath" , "//span[contains(text(),'Admin')]"],
+        "Menu_SetUp" : [ "xpath" , "//span[contains(text(),'Setup')]"],
+	    "Ubicquia_Version" : [ "css" , "div[class=version]"],
+
+        "My_Account" : [ "xpath" , "//*[@class='dropdown al-user-profile']"],
+        "My_Profile" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::a[1]"],
+        "Swap_Panel" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::a[2]"],
+        "Change_Password" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::a[3]"],
+        "Sign_Out_Btn" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::a[4]"],
+	    "Search_CompanyName" : [ "xpath" , "//*[@ng-reflect-placeholder='Search']"],
+        "Ubicquia_NetworkName" : [ "xpath" , "//span[contains(text(),'Acme Corporation Customer 1 (1100)')]"],
+        "Ubicquia_NetworkName1" : [ "linkText" , "Admin Customer 100 (100)"],
+        "All_CompanyNames" : [ "class" , "element-row mat-row ng-star-inserted"]
+   },
+
+     "Menu_Admin" :
+    {
+        "Admin_Header" : [ "xpath" , "//h1[contains(text(),'Admin')]"],
+        "Admin_Columns" : [ "class" , "mat-tab-label mat-ripple ng-star-inserted"],
+
+        "Admin_User_SubTab" : [ "xpath" , "//div[contains(text(),'Users')]"],
+        "Admin_Node_SubTab" : [ "xpath" , "//div[contains(text(),'Nodes')]"],
+        "Admin_Group_SubTab" : [ "xpath" , "//div[contains(text(),'Groups')]"],
+        "Admin_Zone_SubTab" : [ "xpath" , "//div[contains(text(),'Zones')]"],
+        "Admin_Schedule_SubTab" : [ "xpath" , "//div[contains(text(),'Schedules')]"],
+        "Admin_Threshold_SubTab" : [ "xpath" , "//div[contains(text(),'Thresholds')]"],
+        "Admin_FootFall_SubTab" : [ "xpath" , "//div[contains(text(),'Footfall')]"]
+    },
+
+    "Admin_Users" :
+    {
+        "User_Column" : [ "xpath" , "//div[contains(text(),'Users')]"],
+        "User_FirstName" : [ "xpath" , "//*[@class='mat-header-row ng-star-inserted']/descendant::div[1]"],
+        "User_FirstName_List" : [ "class" , "mat-cell cdk-column-firstname mat-column-firstname ng-star-inserted"],
+        "User_LastName" : [ "xpath" , "//button[contains(text(),'LAST NAME')]"],
+        "User_LastName_List" : [ "class" , "mat-cell cdk-column-lastname mat-column-lastname ng-star-inserted"],
+        "User_Type" : [ "xpath" , "//button[contains(text(),'TYPE')]"],
+        "User_Type_List" : [ "class" , "mat-cell cdk-column-roleId mat-column-roleId ng-star-inserted"],
+        "User_Email" : [ "xpath" , "//button[contains(text(),'EMAIL')]"],
+        "User_Email_List" : [ "class" , "mat-cell cdk-column-email mat-column-email ng-star-inserted"]
+    },
+
+    "Admin_Nodes" : 
+    { 
+        "Admin_Node_Column" : [ "xpath" , "(//*[@class='mat-tab-label-content'])[2]"],
+        "Admin_Node_Status" : [ "xpath" , "//*[@class='mat-table']/descendant::mat-checkbox"]
+    },
+
+    "Admin_Groups" : 
+    {
+        "Admin_Group" : [ "xpath" , "//div[contains(text(),'Groups')]"],
+        "Admin_Group_GroupName" : [ "xpath" , "//mat-cell[@class='mat-cell cdk-column-node mat-column-node ng-star-inserted'][contains(text(),'1-Group-1')]"],
+
+        "Description_Column" : [ "xpath" , "(//*[@class='mat-header-row ng-star-inserted']/descendant::mat-header-cell/div)[2]"], 
+        "Description_List" : [ "xpath" , "//*[@class='mat-table']/descendant::mat-row/mat-cell[2]"], 
+
+        "Group_List" : [ "class" , "element-row mat-row ng-star-inserted"],
+        "Group_Name_List" : [ "class" , "mat-cell cdk-column-node mat-column-node ng-star-inserted"],
+
+        "Node_SearchBox" : [ "xpath" , "//*[@ng-reflect-placeholder='Search']"],
+        "Node_SearchBox_Element" : [ "xpath" , "//*[text()='Search']"], 
+        
+        "Pagination_Previous_Btn" : [ "css" , "button[class='mat-paginator-navigation-previous mat-icon-button']"], 
+        "Pagination_Next_Btn" : [ "css" , "button[class='mat-paginator-navigation-next mat-icon-button']"], 
+        
+        "Plus_Add_Icon" : [ "xpath" , "//div[@class='table-action']//button[1]"],
+        
+        "Edit_Group_Btn" : [ "xpath" , "//*[@class='mat-cell cdk-column-edit mat-column-edit ng-star-inserted']/descendant::button"], 
+        "Delete_Group_Btn" : [ "class" , "mat-cell cdk-column-remove mat-column-remove ng-star-inserted"],
+        "Delete_PopUp_Text" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::mat-dialog-content"],
+        "Delete_Group_Yes" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::button[1]"],
+        "Delete_Group_No" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::button[2]"],
+
+        "Added_Nodes_ToGroup" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::span"],
+
+        "Create_Edit_Group_Title" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::h2"],
+        "Create_Edit_Group_NamePlace" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::input[1]"], 
+        "Create_Edit_Group_Description" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::input[2]"], 
+        "Create_Edit_Group_Next_Btn" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::button[3]"], 
+        "Create_Edit_Group_Close_Cancel_Btn" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::button[4]"],
+
+        "Create_Group_AddNode_Title" : [ "xpath" , "//*[@class='cdk-overlay-pane status-dialog']/descendant::h2"],
+        "Create_Group_NodesList" : [ "xpath" , "(//*[@class='mat-table'])[2]/mat-row"],
+        "Create_Group_Nodes_CheckBox" : [ "xpath" , "(//*[@class='mat-table'])[2]/mat-row/descendant::label/div"],
+        "Create_Group_Nodes_Present" : [ "xpath" , "(//*[@class='mat-table'])[2]/mat-row/mat-cell[2]"],
+        "Create_Group_SavePlus_Btn" : [ "xpath" , "//button[@class='fab-toggler mat-fab mat-accent']"],
+        "Create_Group_Save_Btn" : [ "xpath" , "//*[@class='fab-container']/descendant::div[4]"]
+    },
+
+    "Admin_Zones" : 
+    {
+        "Zone_name" : [ "" , ""],
+        "Zone_List" : [ "class" , "element-row mat-row ng-star-inserted"],
+        "Zone_Name_List" : [ "class" , "mat-cell cdk-column-node mat-column-node ng-star-inserted"],
+
+        "Node_SearchBox" : [ "xpath" , "//*[@ng-reflect-placeholder='Search']"],
+        "Node_SearchBox_Element" : [ "xpath" , "//*[text()='Search']"],
+
+        "Edit_Zone_Btn" : [ "xpath" , "//*[@class='mat-cell cdk-column-edit mat-column-edit ng-star-inserted']/descendant::button"], 
+        "Delete_Zone_Btn" : [ "class" , "mat-cell cdk-column-remove mat-column-remove ng-star-inserted"],
+
+        "Delete_PopUp_Text" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::mat-dialog-content"],
+        "Delete_Zone_Yes" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::button[1]"],
+        "Delete_Zone_No" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::button[2]"],
+
+        "Plus_Add_Icon" : [ "xpath" , "//div[@class='table-action']//button[1]"],
+        
+        "Pagination_Previous_Btn" : [ "css" , "button[class='mat-paginator-navigation-previous mat-icon-button']"], 
+        "Pagination_Next_Btn" : [ "css" , "button[class='mat-paginator-navigation-next mat-icon-button']"], 
+
+        "Create_Edit_Zone_Title" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::h2"],
+        "Create_Edit_Zone_NamePlace" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::input[1]"], 
+        "Create_Edit_Zone_Group_DropDown" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::mat-select"], 
+        "Create_Edit_Zone_GroupList" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::mat-option"],
+        "Create_Edit_Zone_Save_Btn" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::button[3]"], 
+        "Create_Edit_Zone_Close_Cancel_Btn" : [ "xpath" , "//*[@class='cdk-overlay-pane form-dialog']/descendant::button[4]"]
+
+    },
+
+    "Admin_Schedules" : 
+    {
+       "Schedule_Column" : [ "xpath" , "//div[contains(text(),'Schedules')]"],
+       "create_Schedule" : [ "xpath" , "//mat-icon[@class='mat-icon material-icons mat-icon-no-color']"],
+       "Enter_Name" : [ "xpath" , "//input[@id='mat-input-1']"],
+       "Select_Node_Popup" : [ "xpath" , "/html[1]/body[1]/div[3]/div[2]/div[1]/mat-dialog-container[1]/app-edit-schedule-dialog[1]/form[1]/mat-dialog-content[1]/div[2]/div[1]/div[1]/mat-form-field[1]/div[1]/div[1]/div[1]/mat-select[1]/div[1]/div[1]/span[1]"],
+       "Select_Node" : [ "xpath" , "//span[contains(text(),'Node 2')]"],
+       "Schedule_Action_DropDown" : ["xpath" , "//mat-select[@ng-reflect-placeholder='Set Schedule Action']"],
+       "Select_Action_Name" : [ "xpath" , "//span[@class='mat-option-text'][contains(text(),'DIM')]"],
+       "Schedule_Slider" : [ "xpath" , "//*[@class='mat-slider-wrapper']"],
+
+        "Schedule_List" : [ "class" , "element-row mat-row ng-star-inserted"],
+        "Schedule_Edit_btn" : [ "class" , "mat-cell cdk-column-edit mat-column-edit ng-star-inserted"],
+
+        "Schedule_PopUp_NameList" : [ "xpath" , "//*[@class='cdk-overlay-pane']/descendant::mat-option"],
+        "Schedule_PopUp_Selected_Names" : [ "xpath" , "(//div[@class='mat-form-field-infix'])[4]/descendant::span[1]"],
+        
+        "Celestial_CheckBox" : [ "css" , "div[class='mat-checkbox-inner-container']"],
+        "Celestial_CheckBox_Status" : [ "xpath" , "//div[@class='mat-checkbox-inner-container']/input"],
+        "Celestial_SunRise" : [ "xpath" , "//*[@class='row center-inline']/descendant::mat-slide-toggle[1]/preceding-sibling::*"],
+        "Celestial_SunSet" : [ "xpath" , "//*[@class='row center-inline']/descendant::mat-slide-toggle[1]/label/span"],
+        "Celestial_OffSet" : [ "xpath" , "//*[@class='row center-inline']/descendant::mat-slide-toggle[2]"], 
+        "Celestial_Clock_Hours" : [ "xpath" , "//*[@class='row center-inline']/descendant::mat-form-field[1]/descendant::input"],
+        "Celestial_Clock_Minutes" : [ "xpath" , "//*[@class='row center-inline']/descendant::mat-form-field[2]/descendant::input"]
+    },
+
+    "Admin_Thresholds" :
+    {
+        "Threshold_Column" : [ "xpath" , "//div[contains(text(),'Thresholds')]"],
+        "Threshold":["xpath","(//*[@class='mat-tab-label-content'])[6]"],
+ 
+        "Threshold_Name" : [ "xpath" , "//button[contains(text(),'NAME')]"],
+        "Admin_Threshold_NameColumn" : [ "xpath" , "(//*[@class='mat-header-row ng-star-inserted']/mat-header-cell/div)[1]/button"], 
+        "Threshold_NameList" : [ "class" , "mat-cell cdk-column-node mat-column-node ng-star-inserted"],
+ 
+        "Threshold_AlertType" : [ "xpath" , "(//*[@class='mat-header-row ng-star-inserted']/mat-header-cell/div)[2]/button"],
+        "Threshold_AlertType_List" : [ "class" , "mat-cell cdk-column-thresholdTypeName mat-column-thresholdTypeName ng-star-inserted"],
+        
+        "Threshold_Active" : [ "xpath" , "(//*[@class='mat-header-row ng-star-inserted']/mat-header-cell/div)[4]/button"],
+        "Threshold_Active_CheckBox" : [ "class" , "mat-cell cdk-column-active mat-column-active ng-star-inserted"]
+    }  
+}
